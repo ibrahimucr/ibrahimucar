@@ -1,0 +1,86 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url(img/img4.jpg);
+    font-family: sans-serif;
+
+
+}
+
+header {
+    text-align: center;
+    background: aquamarine;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+header ul {
+    display: inline-flex;
+    list-style: none;
+    float: left;
+}
+
+header ul li {
+    width: 150px;
+    margin: 15px;
+    padding: 15px;
+    border-radius: 10px;
+    /* kenar yuvarlama*/
+}
+
+header ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.active,
+header ul li:hover {
+    background: #d4c995;
+}
+
+header ul li a i {
+    margin-right: 5px;
+}
+
+.drop-dawn-menu {
+    display: none;
+    /* görünmez yapar*/
+}
+
+header ul li:hover .drop-dawn-menu {
+    display: block;
+    /* acılır kapanır menü olmasını sağlar*/
+    position: absolute;
+    background-color: rgb(34, 34, 127);
+    border-radius: 10px;
+    /* kenar yuvarlama*/
+}
+
+header ul li:hover .drop-dawn-menu ul {
+    display: block;
+    /* alt alta getirmek icin */
+}
+header .d-flex {
+    margin-top: 15px; 
+}
+
+header .d-flex .form1{
+    width: 150px;
+    margin : 5px;
+    padding: 8px;
+    border-radius: 10px;
+}
+header .d-flex .btn1{
+    margin : 5px;
+    padding: 8px;
+    border-radius: 10px;
+    background: #d4c995;
+
+}
+
+
