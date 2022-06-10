@@ -5,82 +5,633 @@
 }
 
 body {
-    background-image: url(img/img4.jpg);
-    font-family: sans-serif;
-
+    /* background-image: url(img/img4.jpg); */
+    font-family: 'Lato', sans-serif;
+    height: auto;
+    background: rgb(158, 158, 158);
+    padding: 0;
+    margin: 0;
+    color: white;
 
 }
 
 header {
     text-align: center;
-    background: aquamarine;
+    background: rgb(73, 74, 74);
+    height: 80px;
+    align-items: center;
+    margin-right: 30px;
+    
+
+
+
+}
+
+.header {
     display: flex;
-    justify-content: space-between;
+    align-items: center;
+    justify-content: space-around;
 
 }
 
-header ul {
+.header form {
     display: inline-flex;
-    list-style: none;
-    float: left;
+    justify-content: flex-end;
+    margin-top: 10px;
+    flex: 120px;
+
 }
 
-header ul li {
-    width: 150px;
-    margin: 15px;
-    padding: 15px;
+/* acılır menü mavi alan icin */
+.header ul {
+    display: inline-flex;
+
+    list-style: none;
+    width: 110px;
+    z-index: 2;
+    flex: 120px;
+
+
+}
+
+/* sarıkutu için  */
+.header ul li {
+    width: 100px;
+    height: 50px;
+    margin: 10px;
+    padding: 10px;
     border-radius: 10px;
     /* kenar yuvarlama*/
 }
 
-header ul li a {
+
+.header ul li a {
     color: white;
     text-decoration: none;
 }
 
-.active,
-header ul li:hover {
-    background: #d4c995;
+.header ul li i {
+    color: white;
+    text-decoration: none;
 }
 
-header ul li a i {
+/* acılır kutu için ayar */
+.active,
+.header ul li:hover {
+    background: #d4c995;
+    width: 100px;
+}
+
+.header ul li a i {
     margin-right: 5px;
+
 }
 
 .drop-dawn-menu {
     display: none;
+
     /* görünmez yapar*/
 }
 
-header ul li:hover .drop-dawn-menu {
+.header ul li:hover .drop-dawn-menu {
     display: block;
     /* acılır kapanır menü olmasını sağlar*/
     position: absolute;
-    background-color: rgb(34, 34, 127);
+    background-color: rgb(110, 110, 111);
     border-radius: 10px;
+
     /* kenar yuvarlama*/
 }
 
-header ul li:hover .drop-dawn-menu ul {
+.header ul li:hover .drop-dawn-menu ul {
     display: block;
+
     /* alt alta getirmek icin */
 }
-header .d-flex {
-    margin-top: 15px; 
-}
 
-header .d-flex .form1{
-    width: 150px;
-    margin : 5px;
+#form1 {
+    margin-top: 15px;
+    width: 100px;
+    height: 40px;
+    margin-top: 5px;
+    margin-left: 0;
     padding: 8px;
     border-radius: 10px;
+    border: none;
 }
-header .d-flex .btn1{
-    margin : 5px;
+
+
+#btn1 {
+    margin-top: 15px;
+    margin: 8px 5px 5px 5px;
+    border: none;
     padding: 8px;
     border-radius: 10px;
-    background: #d4c995;
+    background: #95a8d4;
+
+}
+
+#btn1:hover {
+    margin-top: 15px;
+    margin: 8px 5px 5px 5px;
+    border: none;
+    padding: 8px;
+    border-radius: 10px;
+    background: #69f2cd;
 
 }
 
 
+
+
+
+/* slider */
+
+#right {
+    /*flex yapısı yaptım yatayda sıraladım*/
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    /*içerik uzunluguna göre ayarlar */
+
+
+}
+
+#left-bottom {
+    /**/
+    flex: 650px;
+    /*alacağı boyut kutunun */
+    margin-top: 10px;
+    width: 300px;
+    height: 380px;
+    text-align: center;
+    padding: 10px;
+    margin: 20px;
+    background: rgb(56, 57, 57);
+    border-radius: 10px;
+
+}
+
+
+
+.slider {
+    font: 19px sans-serif;
+    margin: 0px auto;
+    position: relative;
+    width: 600px;
+    height: 380px;
+    overflow: hidden;
+
+    border-radius: 10px;
+    box-shadow: 0 0 25px #4b4c4c;
+    float: left;
+    margin-top: 20px;
+    margin-left: 15px;
+
+}
+
+.slider img {
+
+    position: absolute;
+    width: 600px;
+    height: 380px;
+    transition: all .6s;
+
+}
+
+#img1 {
+    opacity: 1;
+}
+
+#img2 {
+    opacity: 0;
+}
+
+#img3 {
+    opacity: 0;
+}
+
+#img4 {
+    opacity: 0;
+}
+
+#img5 {
+    opacity: 0;
+}
+
+.fas {
+    cursor: pointer;
+    position: absolute;
+    color: #7e7e7e;
+    top: 50%;
+    transform: scale(2.6);
+    transition: .4s;
+    z-index: 1;
+}
+
+.fas:hover {
+    color: darkgray;
+}
+
+.fa-chevron-left {
+    left: 30px;
+}
+
+.fa-chevron-right {
+    right: 30px;
+}
+
+.circle {
+
+    position: absolute;
+    bottom: 10px;
+    width: 15px;
+    height: 15px;
+    border: 2.5px solid white;
+    border-radius: 50%;
+    z-index: 1;
+    transition: .4s;
+}
+
+#circle1 {
+    left: 46%;
+    background-color: white;
+
+}
+
+#circle2 {
+    left: 50%;
+}
+
+#circle3 {
+    left: 54%;
+}
+
+#circle4 {
+    left: 58%;
+}
+
+#circle5 {
+    left: 62%;
+}
+
+
+
+/* CONTAİNER */
+
+.container {
+    padding: 2em;
+    display: grid;
+    grid-template-columns: repeat(3,2fr) ;
+    grid-template-rows: 90px repeat(1, 1fr);
+    grid-gap: 20px;
+    padding-top: 10px;
+
+
+}
+
+.container .card {
+
+    margin: 10px;
+    border: solid;
+    border-radius: 20px;
+    border-color: #171718;
+    text-align: center;
+}
+
+.container header {
+    /*blog başlığı*/
+    grid-column: 1/5;
+    grid-row: 1;
+    color: #eff3f2;
+    font-size: large;
+    background-color: rgb(26, 25, 25);
+    padding: 20px;
+    border-radius: 10px;
+
+}
+
+.container .card-button {
+    border: none;
+    outline: 0;
+    padding: 1px;
+    color: white;
+    background-color: #000;
+    text-align: center;
+    cursor: pointer;
+    width: 100px;
+    font-size: 18px;
+    border-radius: 8px;
+}
+.container .card-button a{
+    text-align: center;
+    text-decoration: none;
+    color: rgb(249, 247, 244);
+    width: 100%;
+}
+
+.card-text img {
+    border-radius: 8px;
+    max-width: 370px;
+    max-height: 200px;
+}
+
+.card-text h1 {
+    font-size: medium;
+    font-size: 18px;
+    margin: 3px;
+    text-align: center;
+}
+
+.card-text p {
+    padding: 5px;
+}
+
+#_1 {
+    grid-column: 1;
+    /*1.çi sütundan 3 sütuna kadar alanı al */
+    grid-row: 2;
+}
+
+#_2 {
+    grid-column: 2;
+    /*1.çi sütundan 3 sütuna kadar alanı al */
+    grid-row: 2;
+}
+
+#_3 {
+    grid-column: 3;
+    /*1.çi sütundan 3 sütuna kadar alanı al */
+    grid-row: 2;
+}
+
+#_4 {
+    grid-column: 1;
+    /*1.çi sütundan 3 sütuna kadar alanı al */
+    grid-row: 3;
+}
+
+#_5 {
+    grid-column: 2;
+    /*1.çi sütundan 3 sütuna kadar alanı al */
+    grid-row: 3;
+}
+
+#_6 {
+    grid-column: 3;
+    /*1.çi sütundan 3 sütuna kadar alanı al */
+    grid-row: 3;
+}#_7 {
+    grid-column: 1;
+    /*1.çi sütundan 3 sütuna kadar alanı al */
+    grid-row: 4;
+}#_8 {
+    grid-column: 2;
+    /*1.çi sütundan 3 sütuna kadar alanı al */
+    grid-row: 4;
+}
+
+.container1 {
+    padding: 2em;
+    margin: 0px;
+    height: 800px;
+    background-color:#535557 ;
+
+}
+
+.container1 .card {
+
+    margin: 10px;
+    border: solid;
+    border-radius: 20px;
+    border-color: #0c0c0c;
+    text-align: center;
+    height: 600px;
+}
+.container1 .card-text img {
+    border-radius: 8px;
+    max-width: 500px;
+    max-height: 500px;
+    margin: 50px;
+}
+.container1.card-text p {
+    padding: 5px;
+    text-align: justify;
+}
+
+
+
+
+
+
+
+/*HAKKIMDA  */
+.hakkimda {
+    width: fit-content;
+    height: 800px;
+    background: rgb(100, 100, 100);
+    margin: 0;
+    display: grid;
+    grid-template-columns: repeat(2, 2fr);
+    grid-template-rows: 80px repeat(2, 2fr) ;
+    grid-gap: 20px;
+}
+
+.hakkimda h2 {
+   grid-column:1/3 ;
+    grid-row: 1 ;
+    background: #000000;
+    text-align: left;
+    font-size: xx-large;
+    font-family: 'Times New Roman';
+    padding: 30px;
+    margin-top:0px;
+    border-radius: 10px;
+
+}
+
+
+.hakkimda #_1 {
+    grid-column: 1;
+    grid-row: 2;
+    text-align: justify;
+    padding: 30px;
+    font-size: 20px;
+    border-radius: 10px;
+
+
+}
+.hakkimda #_2{
+    grid-column: 2/3;
+    grid-row: 2;
+}
+.hakkimda #_2 img{
+    border-radius: 8px;
+    max-width: auto;
+    max-height: auto;
+}
+.hakkimda p{
+    text-indent:50px;
+}
+
+.hakkimda #_3 {
+    grid-column: 1/3;
+    grid-row: 3;
+    text-align: justify;
+    padding: 30px;
+    font-size: 20px;
+    border-radius: 10px;
+
+
+}
+/* İLETİŞİM */
+.iletisim{
+
+    width: auto;
+    height: 800px;
+    background: rgb(117, 115, 115);
+    margin: 0;
+    display: grid;
+    grid-template-columns: repeat(2, 2fr);
+    grid-template-rows: 80px repeat(2, 2fr) ;
+    grid-gap: 20px;
+    align-items: center;
+}
+.iletisim h2 {
+    grid-column:1/3 ;
+     grid-row: 1 ;
+     background: #000000;
+     text-align: left;
+     font-size: xx-large;
+     font-family: 'Times New Roman';
+     padding: 30px;
+     margin-top:0px;
+     border-radius: 10px;
+ 
+ }
+ .maps{
+    max-width: 400px;
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+    grid-column: 2;
+    grid-row: 2;
+    display: flex;
+
+ }
+ .maps iframe{
+     margin-top: 100px;
+ }
+#form{
+    max-width: 400px;
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+    grid-column: 1;
+    grid-row: 2;
+
+    
+}
+ 
+#contact input[type="text"],
+#contact input[type="email"],
+#contact textarea,
+#contact button[type="submit"] {
+    font: 500 12px/16px "Roboto", Helvetica, Arial, sans-serif;
+}
+ 
+#contact {
+    background: #F9F9F9;
+    padding: 25px;
+    margin: 100px 0;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+    border-radius: 10px;
+}
+ 
+#contact h2 {
+    display: block;
+    font-size: 30px;
+    font-weight: 300;
+    margin-bottom: 15px;
+}
+ 
+.form-control{
+    border: none !important;
+    margin: 0 0 10px;
+    min-width: 100%;
+    padding: 0;
+    width: 100%;
+}
+ 
+#contact input[type="text"],
+#contact input[type="email"],
+#contact textarea {
+    width: 100%;
+    border: 1px solid #ccc;
+    background: #FFF;
+    margin: 0 0 5px;
+    padding: 10px;
+    border-radius: 10px;
+}
+ 
+#contact input[type="text"]:hover,
+#contact input[type="email"]:hover,
+#contact textarea:hover {
+    
+    transition: border-color 0.4s ease-in-out;
+    border: 1px solid #aaa;
+    border-radius: 10px;
+}
+ 
+#contact textarea {
+    height: 120px;
+    max-width: 100%;
+    resize: none;
+}
+ 
+#contact button[type="submit"] {
+    cursor: pointer;
+    width: 100%;
+    border: none;
+    background: #515252;
+    color: #FFF;
+    margin: 0 0 5px;
+    padding: 10px;
+    font-size: 15px;
+    border-radius: 10px;
+}
+ 
+#contact button[type="submit"]:hover {
+    background: #757576;
+   
+    transition: background-color 0.4s ease-in-out;
+}
+ 
+#contact button[type="submit"]:active {
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.5);
+}
+ 
+#contact input:focus,
+#contact textarea:focus {
+    outline: 0;
+    border: 1px solid #aaa;
+}
+/* FOOTER */
+footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgb(40, 41, 41);
+    color: azure;
+    height: 200px;
+    
+}
+
+footer .social {
+    display: inline-flex;
+    position: static;
+
+}
+
+
+ 

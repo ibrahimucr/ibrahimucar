@@ -1,56 +1,456 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
-    />
-  </head>
-  <body>
-    <header>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+  <script src="Jscript.js"></script>
+</head>
+
+<body>
+  <header>
+    <div class="header">
       <ul>
+
         <li class="active">
           <a href="#"> <i class="fa-solid fa-house"></i> Anasayfa</a>
         </li>
         <li>
-          <a href="#"> <i class="fa-solid fa-house"></i> Hakkımızda</a>
+          <a href="#Hakkımda"> <i class="fa-solid fa-house"></i> Hakkımızda</a>
         </li>
         <li>
-          <a href="#"><i class="fa-solid fa-house"></i> Teknoloji</a>
+          <a href="#Teknoloji"><i class="fa-solid fa-house"></i> Teknoloji</a>
           <div class="drop-dawn-menu">
             <ul>
-              <li><a href="#"> bilgisayar</a></li>
+              <li><a href="#bilgisayar"> bilgisayar</a></li>
 
-              <li><a href="#">Telefon </a></li>
+              <li><a href="#Telefon">Telefon </a></li>
 
               <li><a href="#">dkkdkd</a></li>
             </ul>
           </div>
         </li>
         <li>
-          <a href="#"><i class="fa-solid fa-house"></i> İletişim</a>
+          <a href="#iletisim"><i class="fa-solid fa-house"></i> İletişim</a>
         </li>
         <li>
-          <a href="#"><i class="fa-solid fa-house"></i> Makaleler</a>
+          <a href="#Blog"><i class="fa-solid fa-house"></i> Makaleler</a>
         </li>
         <li>
-          <a href="#"><i class="fa-solid fa-house"></i> Haberler</a>
+          <a href="#Haber"><i class="fa-solid fa-house"></i> Haberler</a>
         </li>
       </ul>
-      <form class="d-flex">
-        <input
-          class="form1"
-          type="search"
-          placeholder="Search"
-          aria-label="Search"
-        />
-        <button class="btn1" type="submit">Search</button>
-      </form>
+      <ul>
+        <form>
+          <input id="form1" type="search" placeholder="Search" aria-label="Search" />
+          <button id="btn1" type="submit">Search</button>
+
+        </form>
+    </div>
+  </header>
+
+
+
+
+
+
+
+  <!-- Slider -->
+  <div id="right">
+    <div class="slider">
+      <img src="img/pexels-hasan-albari-1229861.jpg" alt="" id="img1">
+      <img src="img/pexels-hasan-albari-1229862.jpg" alt="" id="img2">
+      <img src="img/img3.jpg" alt="" id="img3">
+      <img src="img/pexels-tranmautritam-251225.jpg" alt="" id="img4">
+      <img src="img/img4.jpg" alt="" id="img5">
+      <span class="fas fa-chevron-left " onclick="left()"></span>
+      <span class="fas fa-chevron-right " onclick="right()"></span>
+      <span class="circle" id="circle1"> </span>
+      <span class="circle" id="circle2"> </span>
+      <span class="circle" id="circle3"> </span>
+      <span class="circle" id="circle4"> </span>
+      <span class="circle" id="circle5"> </span>
+    </div>
+
+    <aside id="left-bottom">
+      <h2>Slider yani</h2>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque, molestias ea omnis aliquam quidem obcaecati
+        soluta! Sunt quidem exercitationem molestiae magnam atque corrupti velit recusandae, amet praesentium officia
+        architecto pariatur.
+      </p>
+    </aside>
+  </div>
+
+
+
+Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magnam, deleniti aut, quasi illum, animi suscipit illo optio excepturi placeat recusandae sequi maiores debitis facilis? Reprehenderit iure aperiam sint praesentium accusantium.
+  <!-- Blog -->
+  <div class="container" id="Blog">
+    <header>
+      <h2>MAKALELER</h2>
     </header>
-  </body>
+    <div>
+      <div class="card" id="bir">
+        <h2 style="text-align:center">Product Card</h2>
+        <div class="card-text">
+          <img src="img/pexels-hasan-albari-1229861.jpg" alt="Denim Jeans" style="width:100% ">
+          <h1>Tailored Jeans</h1>
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quia culpa deserunt optio suscipit eum corrupti
+            accusamus, odio dolorem id sunt nemo exercitationem voluptatem sint maiores ipsum. Recusandae enim tempora
+            in.
+          </p>
+          <p><button class="card-button">Add to Cart</button></p>
+        </div>
+      </div>
+      <!-- -- -->
+      <div class="card" id="iki">
+        <h2 style="text-align:center">Product Card</h2>
+        <div class="card-text">
+          <img src="img/pexels-hasan-albari-1229862.jpg" alt="Denim Jeans" style="width:100% ">
+          <h1>Tailored Jeans</h1>
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quia culpa deserunt optio suscipit eum corrupti
+            accusamus, odio dolorem id sunt nemo exercitationem voluptatem sint maiores ipsum. Recusandae enim tempora
+            in.
+          </p>
+          <p><button class="card-button">Add to Cart</button></p>
+        </div>
+      </div>
+    </div>
+    <div>
+      <div class="card" id="uc">
+        <h2 style="text-align:center">Product Card</h2>
+        <div class="card-text">
+          <img src="img/img3.jpg" alt="Denim Jeans" style="width:100% ">
+          <h1>Tailored Jeans</h1>
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quia culpa deserunt optio suscipit eum corrupti
+            accusamus, odio dolorem id sunt nemo exercitationem voluptatem sint maiores ipsum. Recusandae enim tempora
+            in.
+          </p>
+          <p><button class="card-button">Add to Cart</button></p>
+        </div>
+      </div>
+
+
+      <div class="card">
+        <h2 style="text-align:center">Product Card</h2>
+        <div class="card-text">
+          <img src="img/img3.jpg" alt="Denim Jeans" style="width:100% ">
+          <h1>Tailored Jeans</h1>
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quia culpa deserunt optio suscipit eum corrupti
+            accusamus, odio dolorem id sunt nemo exercitationem voluptatem sint maiores ipsum. Recusandae enim tempora
+            in.
+          </p>
+          <p><button class="card-button">Add to Cart</button></p>
+        </div>
+      </div>
+    </div>
+    <div>
+      <div class="card" id="bes">
+        <h2 style="text-align:center">Product Card</h2>
+        <div class="card-text">
+          <img src="img/img3.jpg" alt="Denim Jeans" style="width:100% ">
+          <h1>Tailored Jeans</h1>
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quia culpa deserunt optio suscipit eum corrupti
+            accusamus, odio dolorem id sunt nemo exercitationem voluptatem sint maiores ipsum. Recusandae enim tempora
+            in.
+          </p>
+          <p><button class="card-button">Add to Cart</button></p>
+        </div>
+      </div>
+      <div class="card" id="alti">
+        <h2 style="text-align:center">Product Card</h2>
+        <div class="card-text">
+          <img src="img/img3.jpg" alt="Denim Jeans" style="width:100% ">
+          <h1>Tailored Jeans</h1>
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quia culpa deserunt optio suscipit eum corrupti
+            accusamus, odio dolorem id sunt nemo exercitationem voluptatem sint maiores ipsum. Recusandae enim tempora
+            in.
+          </p>
+          <p><button class="card-button">Add to Cart</button></p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- TEKNOLOJİ -->
+
+  <div class="container" id="Teknoloji">
+    <header>
+      <h2>This is my lovely TEKNOLOJİ</h2>
+    </header>
+    <div id="bilgisayar">
+      <div class="card" id="bir">
+        <h2 style="text-align:center">Bilgisayar</h2>
+        <div class="card-text">
+          <img src="img/pexels-hasan-albari-1229861.jpg" alt="Denim Jeans" style="width:100% ">
+          <h1>Tailored Jeans</h1>
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quia culpa deserunt optio suscipit eum corrupti
+            accusamus, odio dolorem id sunt nemo exercitationem voluptatem sint maiores ipsum. Recusandae enim tempora
+            in.
+          </p>
+          <p><button class="card-button">Add to Cart</button></p>
+        </div>
+      </div>
+      <!-- -- -->
+      <div class="card" id="iki">
+        <h2 style="text-align:center">Bilgisayar</h2>
+        <div class="card-text">
+          <img src="img/pexels-hasan-albari-1229862.jpg" alt="Denim Jeans" style="width:100% ">
+          <h1>Tailored Jeans</h1>
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quia culpa deserunt optio suscipit eum corrupti
+            accusamus, odio dolorem id sunt nemo exercitationem voluptatem sint maiores ipsum. Recusandae enim tempora
+            in.
+          </p>
+          <p><button class="card-button">Add to Cart</button></p>
+        </div>
+      </div>
+    </div>
+    <div id="Telefon">
+      <div class="card" id="uc">
+        <h2 style="text-align:center">Telefon</h2>
+        <div class="card-text">
+          <img src="img/img3.jpg" alt="Denim Jeans" style="width:100% ">
+          <h1>Tailored Jeans</h1>
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quia culpa deserunt optio suscipit eum corrupti
+            accusamus, odio dolorem id sunt nemo exercitationem voluptatem sint maiores ipsum. Recusandae enim tempora
+            in.
+          </p>
+          <p><button class="card-button">Add to Cart</button></p>
+        </div>
+        <div></div>
+      </div>
+      <div class="card" id="dort">
+        <h2 style="text-align:center">Telefon</h2>
+        <div class="card-text">
+          <img src="img/img3.jpg" alt="Denim Jeans" style="width:100% ">
+          <h1>Tailored Jeans</h1>
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quia culpa deserunt optio suscipit eum corrupti
+            accusamus, odio dolorem id sunt nemo exercitationem voluptatem sint maiores ipsum. Recusandae enim tempora
+            in.
+          </p>
+          <p><button class="card-button">Add to Cart</button></p>
+        </div>
+      </div>
+    </div>
+    <div>
+      <div class="card" id="bes">
+        <h2 style="text-align:center">Product Card</h2>
+        <div class="card-text">
+          <img src="img/img3.jpg" alt="Denim Jeans" style="width:100% ">
+          <h1>Tailored Jeans</h1>
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quia culpa deserunt optio suscipit eum corrupti
+            accusamus, odio dolorem id sunt nemo exercitationem voluptatem sint maiores ipsum. Recusandae enim tempora
+            in.
+          </p>
+          <p><button class="card-button">Add to Cart</button></p>
+        </div>
+      </div>
+      <div class="card" id="alti">
+        <h2 style="text-align:center">Product Card</h2>
+        <div class="card-text">
+          <img src="img/img3.jpg" alt="Denim Jeans" style="width:100% ">
+          <h1>Tailored Jeans</h1>
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quia culpa deserunt optio suscipit eum corrupti
+            accusamus, odio dolorem id sunt nemo exercitationem voluptatem sint maiores ipsum. Recusandae enim tempora
+            in.
+          </p>
+          <p><button class="card-button">Add to Cart</button></p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!--Haber -->
+  <div class="container" id="Haber">
+    <header>
+      <h2>HABER</h2>
+    </header>
+    <div class="card" id="_1">
+      <h2 style="text-align:center">Product Card</h2>
+      <div class="card-text">
+        <img src="img/pexels-hasan-albari-1229861.jpg" alt="Denim Jeans" style="width:100% ">
+        <h1>Tailored Jeans</h1>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quia culpa deserunt optio suscipit eum corrupti
+          accusamus, odio dolorem id sunt nemo exercitationem voluptatem sint maiores ipsum. Recusandae enim tempora in.
+        </p>
+        <p><button class="card-button">Add to Cart</button></p>
+      </div>
+    </div>
+    <!-- -- -->
+    <div class="card" id="_2">
+      <h2 style="text-align:center">Product Card</h2>
+      <div class="card-text">
+        <img src="img/pexels-hasan-albari-1229862.jpg" alt="Denim Jeans" style="width:100% ">
+        <h1>Tailored Jeans</h1>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quia culpa deserunt optio suscipit eum corrupti
+          accusamus, odio dolorem id sunt nemo exercitationem voluptatem sint maiores ipsum. Recusandae enim tempora in.
+        </p>
+        <p><button class="card-button">Add to Cart</button></p>
+      </div>
+    </div>
+
+    <div class="card" id="_3">
+      <h2 style="text-align:center">Product Card</h2>
+      <div class="card-text">
+        <img src="img/img3.jpg" alt="Denim Jeans" style="width:100% ">
+        <h1>Tailored Jeans</h1>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quia culpa deserunt optio suscipit eum corrupti
+          accusamus, odio dolorem id sunt nemo exercitationem voluptatem sint maiores ipsum. Recusandae enim tempora in.
+        </p>
+        <p><button class="card-button">Add to Cart</button></p>
+      </div>
+    </div>
+    <div class="card" id="_4">
+      <h2 style="text-align:center">Product Card</h2>
+      <div class="card-text">
+        <img src="img/img3.jpg" alt="Denim Jeans" style="width:100% ">
+        <h1>Tailored Jeans</h1>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quia culpa deserunt optio suscipit eum corrupti
+          accusamus, odio dolorem id sunt nemo exercitationem voluptatem sint maiores ipsum. Recusandae enim tempora in.
+        </p>
+        <p><button class="card-button">Add to Cart</button></p>
+      </div>
+    </div>
+    <div class="card" id="_5">
+      <h2 style="text-align:center">Product Card</h2>
+      <div class="card-text">
+        <img src="img/img3.jpg" alt="Denim Jeans" style="width:100% ">
+        <h1>Tailored Jeans</h1>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quia culpa deserunt optio suscipit eum corrupti
+          accusamus, odio dolorem id sunt nemo exercitationem voluptatem sint maiores ipsum. Recusandae enim tempora in.
+        </p>
+        <p><button class="card-button">Add to Cart</button></p>
+      </div>
+    </div>
+    <div class="card" id="_6">
+      <h2 style="text-align:center">Product Card</h2>
+      <div class="card-text">
+        <img src="img/img3.jpg" alt="Denim Jeans" style="width:100% ">
+        <h1>Tailored Jeans</h1>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quia culpa deserunt optio suscipit eum corrupti
+          accusamus, odio dolorem id sunt nemo exercitationem voluptatem sint maiores ipsum. Recusandae enim tempora in.
+        </p>
+        <p><button class="card-button">Add to Cart</button></p>
+      </div>
+    </div>
+    <div class="card" id="_7">
+      <h2 style="text-align:center">Product Card</h2>
+      <div class="card-text">
+        <img src="img/img3.jpg" alt="Denim Jeans" style="width:100% ">
+        <h1>Tailored Jeans</h1>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quia culpa deserunt optio suscipit eum corrupti
+          accusamus, odio dolorem id sunt nemo exercitationem voluptatem sint maiores ipsum. Recusandae enim tempora in.
+        </p>
+        <p><button class="card-button">Add to Cart</button></p>
+      </div>
+    </div>
+    <div class="card" id="_8">
+      <h2 style="text-align:center">Product Card</h2>
+      <div class="card-text">
+        <img src="img/img3.jpg" alt="Denim Jeans" style="width:100% ">
+        <h1>Tailored Jeans</h1>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quia culpa deserunt optio suscipit eum corrupti
+          accusamus, odio dolorem id sunt nemo exercitationem voluptatem sint maiores ipsum. Recusandae enim tempora in.
+        </p>
+        <p><button class="card-button">Add to Cart</button></p>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- HAKKIMDA -->
+  <div class="hakkimda" id="Hakkımda">
+
+    <h2>Hakkımda</h2>
+
+    <article id="_1">
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae quod repellat ratione ullam illum voluptas cum
+        laudantium voluptates odio labore iusto dolores veritatis, itaque voluptatibus, quo dignissimos corporis
+        aliquid. Laudantium?</p>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam sed nostrum vel veniam delectus facilis, harum
+        nemo saepe officia aperiam beatae, consectetur reprehenderit magnam ipsa vero assumenda voluptatibus odio
+        explicabo.</p>
+    </article>
+    <article id="_2">
+      <img src="img/pexels-hasan-albari-1229861.jpg" alt="">
+    </article>
+    <article id="_3">
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae quod repellat ratione ullam illum voluptas cum
+        laudantium voluptates odio labore iusto dolores veritatis, itaque voluptatibus, quo dignissimos corporis
+        aliquid. Laudantium?</p>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero, quod. Obcaecati cumque ratione enim adipisci eos
+        quas architecto illo quibusdam. Dignissimos nostrum error quibusdam sapiente dicta quam laboriosam reprehenderit
+        ratione.</p>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos repudiandae veniam esse placeat ipsa ea quos
+        aliquid aspernatur et nisi temporibus deserunt distinctio facere quam, voluptatem iure commodi dolorum officia.
+      </p>
+    </article>
+
+  </div>
+
+
+  <!-- İLETİŞİM -->
+
+
+  <div class="iletisim" id="iletisim">
+    <h2> İLETİŞİM</h2>
+    <div id="form">
+      <form id="contact" action="" method="">
+        <h2>İletişim Sayfası</h2>
+        <div class="form-control">
+          <input placeholder="Adınız Soyadınız" type="text" required>
+        </div>
+        <div class="form-control">
+          <input placeholder="E-Posta Adresiniz" type="email" required>
+        </div>
+        <div class="form-control">
+          <input placeholder="Konu" type="text" required>
+        </div>
+        <div class="form-control">
+          <textarea placeholder="Lütfen Mesajınızı Buraya Yazın.." required></textarea>
+        </div>
+        <div class="form-control">
+          <button name="submit" type="submit" id="submit">GÖNDER</button>
+        </div>
+      </form>
+    </div>
+    <div id="maps">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3041.2204166754077!2d27.933812014891966!3d40.33745616838185!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14b5d4a80f94f805%3A0x9901064bc5b1c83!2sBand%C4%B1rma%20Onyedi%20Eyl%C3%BCl%20%C3%9Cniversitesi!5e0!3m2!1str!2str!4v1654819775170!5m2!1str!2str"
+        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+
+
+
+
+  </div>
+  <!-- footer alanı -->
+  <footer>
+
+    <p>İbrahim UÇAR</p>
+
+    <h3>iletişim</h3>
+    <h4>Mail: abc@hotmail.com</h4>
+    <h4>Mail: abc@hotmail.com</h4>
+    <h4>Mail: abc@hotmail.com</h4>
+
+    <div class="social">
+      <a href="#"><i class="fab fa-facebook  fa-3x"></i></a>
+      <a href="#"><i class="fab fa-instagram fa-3x"></i></a>
+      <a href="#"><i class="fa-brands fa-twitter  fa-3x "></i></a>
+    </div>
+
+  </footer>
+
+
 </html>
