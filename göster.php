@@ -14,7 +14,8 @@ function Filtrele($Deger)
 include("baglan.php");
 $GelenId = Filtrele($_GET["name"]);
 $gelendeger = explode(".", $GelenId);
-echo $gelendeger[1]
+
+
 ?>
 
 <?php
